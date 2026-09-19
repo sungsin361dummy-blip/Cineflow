@@ -15,16 +15,16 @@ jobs:
       - name: Checkout Source Code
         uses: actions/checkout@v4
 
-      - name: Set up JDK 17
+      - name: Set up JDK 21
         uses: actions/setup-java@v4
         with:
-          java-version: '17'
+          java-version: '21'
           distribution: 'temurin'
 
-      - name: Setup Gradle
+      - name: Setup Gradle 9.3.1
         uses: gradle/actions/setup-gradle@v4
         with:
-          gradle-version: '8.11.1'
+          gradle-version: '9.3.1'
 
       - name: Setup Android Environment & Keys
         run: |
@@ -40,9 +40,9 @@ jobs:
           echo -e "\n8933bad161af4178b1185d1a37fbf41ea5269c55\nd56f5185479d0f797e44aab302b5708701509c25\n24333f8a63cbd824300774d6f7612373d49bc0e4" > "$ANDROID_HOME/licenses/android-sdk-license"
           echo -e "\n84831b9409646a578e440d76b880404907da4760" > "$ANDROID_HOME/licenses/android-sdk-preview-license"
 
-      - name: Build Android APK with Gradle
+      - name: Build Android APK
         run: |
-          gradle assembleDebug --no-daemon --stacktrace -x test -x lint
+          gradle :app:assembleDebug --no-daemon --stacktrace -x test -x lint
 
       - name: Find & Upload APK Artifact
         uses: actions/upload-artifact@v4
