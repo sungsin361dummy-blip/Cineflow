@@ -1,0 +1,7 @@
+{
+  "name": "CineFlow",
+  "description": "Master Director and AI Series Prompt Studio with character reference upload and continuity locking for Gemini Omni Flash.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

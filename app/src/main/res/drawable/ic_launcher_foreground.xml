@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Film clapper / Cinema camera body inside 66dp safe zone (21..87) -->
+    <!-- Camera body -->
+    <path
+        android:pathData="M32,44 h34 a4,4 0 0,1 4,4 v26 a4,4 0 0,1 -4,4 h-34 a4,4 0 0,1 -4,-4 v-26 a4,4 0 0,1 4,-4 z"
+        android:fillColor="#212838" />
+
+    <!-- Lens cone projecting right -->
+    <path
+        android:pathData="M70,52 L84,43 v28 L70,62 z"
+        android:fillColor="#FFB74D" />
+
+    <!-- Dual film reels on top of camera -->
+    <!-- Left reel -->
+    <path
+        android:pathData="M38,36 m-8,0 a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0"
+        android:fillColor="#38BDF8" />
+    <path
+        android:pathData="M38,36 m-3.5,0 a3.5,3.5 0 1,0 7,0 a3.5,3.5 0 1,0 -7,0"
+        android:fillColor="#0F172A" />
+
+    <!-- Right reel -->
+    <path
+        android:pathData="M54,36 m-8,0 a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0"
+        android:fillColor="#38BDF8" />
+    <path
+        android:pathData="M54,36 m-3.5,0 a3.5,3.5 0 1,0 7,0 a3.5,3.5 0 1,0 -7,0"
+        android:fillColor="#0F172A" />
+
+    <!-- Lens aperture iris inside camera body -->
+    <path
+        android:pathData="M48,60 m-9,0 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0"
+        android:fillColor="#1E293B"
+        android:strokeColor="#FFB74D"
+        android:strokeWidth="1.8" />
+
+    <!-- Inner iris glowing aperture star -->
+    <path
+        android:pathData="M48,55 L50,59 L54,60 L50,62 L48,66 L46,62 L42,60 L46,59 z"
+        android:fillColor="#FFD54F" />
+
+    <!-- Director viewfinder / recording dot -->
+    <path
+        android:pathData="M64,50 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0"
+        android:fillColor="#EF4444" />
+</vector>
